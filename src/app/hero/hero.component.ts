@@ -12,4 +12,8 @@ export class HeroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public contactMe() {
+    alert('smell');
+  }
+
 }
