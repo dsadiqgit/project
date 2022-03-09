@@ -1,0 +1,30 @@
+.portfolio-strip {
+    position: relative;
+
+    h2 {
+        font-size: 60px;
+    }
+
+    .work {
+        position: absolute;
+        right: -250px;
+        top: -90px;
+        p {
+            font-size: 300px;
+            color: rgba(0, 0, 0, 0.03);
+            font-family: 'Francois One', sans-serif;
+            letter-spacing: -20px;
+        }
+    }
+
+    .portfolio-text {
+        @media screen and (min-width: 768px) {
+            max-width: 70%;   
+        }
+    }
+
+    .see-more {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DamiComponent } from './dami/dami.component';
 import { HeroComponent } from './hero/hero.component';
+import { PortfolioStripComponent } from './portfolio-strip/portfolio-strip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DamiComponent,
-    HeroComponent
+    HeroComponent,
+    PortfolioStripComponent
   ],
   imports: [
     BrowserModule,

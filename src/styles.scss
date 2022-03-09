@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    overflow-x: hidden;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Francois One', sans-serif;
+    }
+
+    .btn { 
+        padding: 10px 70px;
+        background: linear-gradient(to right, #039803 50%, white 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+        color: #039803;
+        border: 1px solid #039803;
+    }
+      
+    .btn:hover {
+        background-position: left bottom;
+        color: white;
+    }
+}

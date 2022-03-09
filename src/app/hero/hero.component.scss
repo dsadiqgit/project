@@ -31,20 +31,5 @@
     .info, .contact-info {
         width: 100%;
     }
-
-    .btn { 
-        padding: 10px 70px;
-        background: linear-gradient(to right, #039803 50%, white 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition: all .5s ease-out;
-        color: #039803;
-        border: 1px solid #039803;
-      }
-      
-      .btn:hover {
-        background-position: left bottom;
-        color: white;
-      }
 }
 
