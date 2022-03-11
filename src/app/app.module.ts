@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DamiComponent } from './dami/dami.component';
 import { HeroComponent } from './hero/hero.component';
 import { PortfolioStripComponent } from './portfolio-strip/portfolio-strip.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DamiComponent,
     HeroComponent,
-    PortfolioStripComponent
+    PortfolioStripComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
