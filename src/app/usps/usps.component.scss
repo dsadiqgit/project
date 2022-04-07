@@ -1,0 +1,68 @@
+#usps {
+    padding: 120px 0 50px 0;
+
+    .usp {
+        flex: 0 50%;
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+            0 5px 15px 0 rgba(37, 44, 97, 0.15);
+        border-radius: 15px;
+        margin: 8px 8px 40px 8px;
+        padding: 20px 25px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        min-height: 265px;
+        transition: 0.7s;
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 30px;
+        }
+
+        &:hover {
+            background: #309df0;
+            color: #fff;
+            transform: scale(1.1);
+            z-index: 9;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: #309df0;
+            opacity: 0.1;
+            width: 170px;
+            height: 500px;
+            z-index: -1;
+            transform: rotate(42deg);
+            right: -56px;
+            top: 60px;
+            border-radius: 35px;
+        }
+
+        img {
+            max-width: 100px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            display: flex;
+        }
+    } 
+
+
+    .usp:hover:before {
+        background: rgb(85 108 214 / 10%);
+    }
+
+    #usp-div {
+        opacity: 0;
+        bottom: -100px;
+        position: relative;
+    }
+
+    #usp-div.active {
+        opacity: 1 !important;
+        bottom: 0;
+        transition: 1.4s;
+    }
+}
