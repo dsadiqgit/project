@@ -8,6 +8,7 @@ import { HeroComponent } from './hero/hero.component';
 import { HeaderComponent } from './header/header.component';
 import { PortfolioStripComponent } from './portfolio-strip/portfolio-strip.component';
 import { ContactComponent } from './contact/contact.component';
+import { UspsComponent } from './usps/usps.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     HeroComponent,
     HeaderComponent,
     PortfolioStripComponent,
-    ContactComponent
+    ContactComponent,
+    UspsComponent
   ],
   imports: [
     BrowserModule,
