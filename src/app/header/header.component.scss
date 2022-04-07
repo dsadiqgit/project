@@ -1,8 +1,11 @@
 #header {
+
+    background-color: #9dcfea;
+
     .container {
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
+        padding-top: 50px;
         align-items: flex-end;
         z-index: 11;
         position: relative;
@@ -69,6 +72,7 @@
         background: none;
         border: none;
     }
+
 }
 
 #nav {
