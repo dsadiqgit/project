@@ -5,10 +5,14 @@
     .container {
         display: flex;
         justify-content: space-between;
-        padding-top: 50px;
+        padding: 25px 0;
         align-items: flex-end;
         z-index: 11;
         position: relative;
+
+        p {
+            color: #ffffff;
+        }
 
         a {
             text-decoration: none;
@@ -19,6 +23,7 @@
     .header-div {
         display: flex;
         align-items: flex-end;
+        
         .logo {
             max-width: 100px;
             cursor: pointer;
@@ -34,6 +39,8 @@
             align-self: flex-end;
             margin: 0;
             padding-left: 15px;
+            color: #ffffff;
+
 
             @media screen and (min-width: 768px) {
                 padding: 0 50px;
@@ -79,7 +86,7 @@
     width: 100vw;
     height: 100%;
     position: fixed;
-    background-color: grey;
+    background-color: #9dcfea;
     top: -900px;
     z-index: 10;
     transition:all 700ms linear;

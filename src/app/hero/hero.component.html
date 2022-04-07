@@ -1,7 +1,7 @@
 <section id="hero">
 <div class="container"> 
-    <div class="hero-div">
-        <div class="info">
+    <div class="hero-div d-md-flex">
+        <div class="info col-md-6">
             <h1>
                 <span>H</span>
                 <span>i</span>,<br>
@@ -9,12 +9,15 @@
                 web developer
             </h1>
             <p>Front End Developer / Digital Designer</p>
+            <div>
+                <button class="contact-box btn btn-primary btn-lg" (click)="contactMe()">
+                    Contact Me
+                </button>
+            </div>
         </div>
-
-        <div>
-            <button class="contact-box btn btn-primary btn-lg" (click)="contactMe()">
-                Contact Me
-            </button>
+        
+        <div class="mobile-div col-md-6">
+            <img class="mobile" src="/assets/images/mobile.png">
         </div>
     </div>
 </div>

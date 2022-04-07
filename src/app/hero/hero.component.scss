@@ -6,22 +6,30 @@
     &:after {
         content: "";
         width: 100%;
-        height: 400px;
+        height: 450px;
         background: url(/assets/images/splitter.svg);
         display: flex;
         background-size: cover;
         background-position-x: center;
+
+        @media screen and (min-width: 1600px) {
+            height: 700px;
+        }
 
     }
 
     .hero-div {
         height: 100vh;
         align-content: center;
-        display: flex;
-        flex-wrap: wrap;
+
+        p {
+            color: #ffffff;
+        }
 
         h1 {
             font-size: 50px;
+            color: #ffffff;
+
             @media screen and (min-width: 768px) {
                 font-size: 80px;
             }
@@ -41,10 +49,6 @@
                     100% { transform: translateY(0) rotate(0) }
                 }
             }
-        }
-
-        .info, .contact-info {
-            width: 100%;
         }
     }
 }
