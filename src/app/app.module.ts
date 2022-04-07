@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DamiComponent } from './dami/dami.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeaderComponent } from './header/header.component';
 import { PortfolioStripComponent } from './portfolio-strip/portfolio-strip.component';
 import { ContactComponent } from './contact/contact.component';
 
@@ -13,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     DamiComponent,
     HeroComponent,
+    HeaderComponent,
     PortfolioStripComponent,
     ContactComponent
   ],
