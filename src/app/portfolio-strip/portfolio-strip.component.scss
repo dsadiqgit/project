@@ -1,40 +1,82 @@
-.portfolio-strip {
-    position: relative;
-    overflow: hidden;
+#portfolio-strip {
     
-    @media screen and (min-width: 768px) {
-        overflow: visible;
-    }
-
-    .work {
-        position: absolute;
-        right: -30px;
-        top: -20px;
+    .portfolio-strip {
+        position: relative;
+        overflow: hidden;
+        
         @media screen and (min-width: 768px) {
-            right: -250px;
-            top: -90px;
+            overflow: visible;
         }
 
-        p {
-            font-size: 300px;
-            color: rgba(0, 0, 0, 0.03);
-            font-family: 'Francois One', sans-serif;
-            letter-spacing: -20px;
-
+        .work {
+            position: absolute;
+            right: -30px;
+            top: -20px;
             @media screen and (min-width: 768px) {
-                
+                right: -250px;
+                top: -90px;
+            }
+
+            p {
+                font-size: 300px;
+                color: rgba(0, 0, 0, 0.03);
+                font-family: 'Francois One', sans-serif;
+                letter-spacing: -20px;
+
+                @media screen and (min-width: 768px) {
+                    
+                }
             }
         }
-    }
 
-    .portfolio-text {
-        @media screen and (min-width: 768px) {
-            max-width: 70%;   
+        .portfolio-text {
+            @media screen and (min-width: 768px) {
+                max-width: 70%;   
+            }
         }
-    }
 
-    .see-more {
-        display: flex;
-        justify-content: center;
+        .gallery-container {
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 2rem 0;
+            
+            h2 {
+                color: #333;
+            }
+            
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                
+                li img {
+                    display: block;
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+        .gallery-container ul {
+            
+            &.mosaic-gallery {
+                display: flex;
+                    flex-wrap: wrap;
+                margin: 0 -0.5rem;
+        
+                li {
+                    background-position: center center;
+                    background-size: cover;
+                    flex: auto;
+                    height: 15vw;
+                    margin: 0 0.5rem 1rem;
+                    border-radius: 25px;
+        
+                    img {
+                        height: 100%;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
     }
 }
