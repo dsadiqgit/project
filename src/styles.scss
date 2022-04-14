@@ -1,33 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: "Louis George Café Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/louis-george-cafe.light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Louis George Café Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/louis-george-cafe.regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Louis George Café Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/louis-george-cafe.bold.woff") format("woff");
+}
+
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 
-    .container {
-        padding: 0 30px;
-    }
-    
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Francois One', sans-serif;
-    }
+  .container {
+    padding: 0 30px;
+  }
 
-    h2 {
-        font-size: 60px;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Louis George Café Bold";
+  }
 
-    .btn { 
-        padding: 10px 70px;
-        background: linear-gradient(to right, #039803 50%, white 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition: all .5s ease-out;
-        color: #039803;
-        border: 1px solid #039803;
-    }
-      
-    .btn:hover {
-        background-position: left bottom;
-        color: white;
-    }
+  h2 {
+    font-size: 60px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 10px 70px;
+    background: linear-gradient(to right, #039803 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    color: #039803;
+    border: 1px solid #039803;
+  }
+
+  .btn:hover {
+    background-position: left bottom;
+    color: white;
+  }
 }

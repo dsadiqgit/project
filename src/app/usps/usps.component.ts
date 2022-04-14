@@ -14,12 +14,12 @@ export class UspsComponent implements OnInit {
   }
 
   @HostListener("window:scroll", []) onWindowScroll() {
-    const usp = document.getElementById('usp-div') as HTMLElement;
+    const topFacts = document.getElementById('top') as HTMLElement;
     if (window.pageYOffset >= 750 ) {
-      usp.classList.add('active');
+      topFacts.classList.add('active');
     }
     else {
-      usp.classList.remove('active');
+      topFacts.classList.remove('active');
     }
   }
 
