@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import {
   FormGroup,
   FormControl,
@@ -30,6 +30,35 @@ export class ContactComponent implements OnInit {
         Validators.minLength(10),
       ]),
     });
+  }
+
+  @HostListener('window:scroll', []) onWindowScroll() {
+    const item = document.getElementById('contact-form') as HTMLElement;
+
+    if (this.isInViewport(item)) {
+      item.classList.add('slide-right');
+    }
+  }
+
+  public isInViewport(item) {
+    var bounding = item.getBoundingClientRect(),
+      myElementHeight = item.offsetHeight,
+      myElementWidth = item.offsetWidth;
+
+    if (
+      bounding.top >= -myElementHeight &&
+      bounding.left >= -myElementWidth &&
+      bounding.right <=
+        (window.innerWidth || document.documentElement.clientWidth) +
+          myElementWidth &&
+      bounding.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) +
+          myElementHeight
+    ) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   public onSubmit(e: Event) {

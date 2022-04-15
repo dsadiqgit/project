@@ -1,38 +1,49 @@
 <div id="header">
-    <div class="container"> 
-        <div class="header-div">
-            <a href="#">
-                <img src="../../assets/images/dsadiq-logo.png" class="logo" alt="DSadiq Logo">
-            </a>
-            <button *ngIf="!showMenu" class="menu expanding-text" (click)="toggleMenu()">Menu</button>
-            <button *ngIf="showMenu" class="menu expanding-text" (click)="toggleMenu()">Close</button>
-        </div>
-        <a href="#contact">
-            <button (click)="closeMenu()">
-                <div class="contact">
-                    <img src="../../assets/images/icon/speech-bubble.png" class="speech" alt="Speech Icon">
-                    <p class="expanding-text">Contact Me</p>
-                </div>
-            </button>
-        </a>
+  <div class="container">
+    <div class="header-div">
+      <a href="#">
+        <img
+          src="../../assets/images/dsadiq-logo.png"
+          class="logo"
+          alt="DSadiq Logo"
+        />
+      </a>
+      <div id="hamburger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+    <a href="#contact">
+      <button (click)="closeMenu()">
+        <div class="contact">
+          <img
+            src="../../assets/images/icon/speech-bubble.png"
+            class="speech"
+            alt="Speech Icon"
+          />
+          <p class="expanding-text">Contact Me</p>
+        </div>
+      </button>
+    </a>
+  </div>
 
-    <div id="nav">
-        <div class="nav-menu">
-            <ul>
-                <li>
-                    <a>Home</a>
-                </li>
-                <li>
-                    About 
-                </li>
-                <li>
-                    Work
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ul>
-        </div>
+  <div id="nav">
+    <div class="left-menu">
+      <div class="nav-menu">
+        <ul>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>About</li>
+          <li>Work</li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </div>
+    <div class="right-menu">
+      <p>TEST</p>
+    </div>
+  </div>
 </div>

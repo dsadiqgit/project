@@ -59,4 +59,17 @@ body {
     background-position: left bottom;
     color: white;
   }
+
+  /***** Slide Right *****/
+  .slide-right {
+    animation: 2s slide-right ease-in;
+  }
+  @keyframes slide-right {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
 }
