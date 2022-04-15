@@ -1,9 +1,11 @@
 #portfolio-strip {
   position: relative;
   overflow: hidden;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
-    overflow: visible;
+    overflow: hidden;
+    text-align: left;
   }
 
   .work {
@@ -86,6 +88,7 @@
         bottom: 20px;
         left: 30px;
         transition: 1.2s ease-in-out;
+        text-align: left;
 
         p {
           background: white;

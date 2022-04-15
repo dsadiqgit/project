@@ -8,42 +8,49 @@
           alt="DSadiq Logo"
         />
       </a>
-      <div id="hamburger" (click)="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <a href="#contact">
-      <button (click)="closeMenu()">
-        <div class="contact">
-          <img
-            src="../../assets/images/icon/speech-bubble.png"
-            class="speech"
-            alt="Speech Icon"
-          />
-          <p class="expanding-text">Contact Me</p>
+
+      <span class="d-flex">
+        <a href="#contact-form">
+          <div class="contact" (click)="closeMenu()">
+            <img
+              src="../../assets/images/icon/speech-bubble.png"
+              class="speech"
+              alt="Speech Icon"
+            />
+          </div>
+        </a>
+        <div id="hamburger" (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </button>
-    </a>
+      </span>
+    </div>
   </div>
 
   <div id="nav">
-    <div class="left-menu">
-      <div class="nav-menu">
-        <ul>
-          <li>
-            <a>Home</a>
-          </li>
-          <li>About</li>
-          <li>Work</li>
-          <li>Contact</li>
-        </ul>
+    <div class="container">
+      <div class="left-menu">
+        <div class="nav-menu">
+          <ul>
+            <li>
+              <a>Home</a>
+            </li>
+            <li>About</li>
+            <a routerLink="/portfolio">
+              <li>Work</li>
+            </a>
+            <a href="#contact-form">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="right-menu">
-      <p>TEST</p>
+      <h6>Have a project?</h6>
+      <h5>myemail@info.co.uk</h5>
     </div>
   </div>
 </div>

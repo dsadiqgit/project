@@ -24,8 +24,16 @@
 body {
   overflow-x: hidden;
 
+  &.no-overflow {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 30px;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   h1,
@@ -38,7 +46,10 @@ body {
   }
 
   h2 {
-    font-size: 60px;
+    font-size: 40px;
+    @media screen and (min-width: 768px) {
+      font-size: 60px;
+    }
   }
 
   h5 {
@@ -62,7 +73,10 @@ body {
 
   /***** Slide Right *****/
   .slide-right {
-    animation: 2s slide-right ease-in;
+    animation: 1.4s fade-in ease-in;
+    @media screen and (min-width: 768px) {
+      animation: 1.4s slide-right ease-in;
+    }
   }
   @keyframes slide-right {
     from {
@@ -70,6 +84,15 @@ body {
     }
     to {
       left: 0%;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 }
