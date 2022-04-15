@@ -5,6 +5,7 @@ import {
   Validators,
   FormBuilder,
 } from '@angular/forms';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -31,26 +32,43 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  public onSubmit() {
+  public onSubmit(e: Event) {
     console.log(this.contactForm.get('firstName'));
     this.contactForm.markAllAsTouched();
     if (this.contactForm.valid) {
-      const btn = document.getElementById('submit-btn') as HTMLElement;
-      const success = document.getElementById('success') as HTMLElement;
+      // const btn = document.getElementById('submit-btn') as HTMLElement;
+      // const success = document.getElementById('success') as HTMLElement;
 
-      btn.classList.add('btn-progress');
-      setTimeout(() => {
-        btn.classList.add('btn-fill');
-      }, 500);
+      // btn.classList.add('btn-progress');
+      // setTimeout(() => {
+      //   btn.classList.add('btn-fill');
+      // }, 500);
 
-      setTimeout(() => {
-        btn.classList.remove('btn-fill');
-      }, 4100);
+      // setTimeout(() => {
+      //   btn.classList.remove('btn-fill');
+      // }, 4100);
 
-      setTimeout(() => {
-        btn.classList.add('btn-complete');
-        success.classList.add('active');
-      }, 4100);
+      // setTimeout(() => {
+      //   btn.classList.add('btn-complete');
+      //   success.classList.add('active');
+      // }, 4100);
+
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          'service_uh6lbzf',
+          'template_7zqrnbx',
+          e.target as HTMLFormElement,
+          'hcmeQ8mn0wGk88WA6'
+        )
+        .then(
+          (result: EmailJSResponseStatus) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     }
 
     if (!this.contactForm.valid) {
