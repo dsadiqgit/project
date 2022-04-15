@@ -19,28 +19,35 @@ export class HeroComponent implements OnInit {
   @HostListener('window:scroll', []) onWindowScroll() {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
-      var image = $('#js-hero img');
+      var mac = $('#mac');
       var imageDiv = $('#js-hero');
-      image.css({
+      var macDiv = $('#mac-div');
+
+      mac.css({
         width: 100 - scroll / 2 + '%',
         top: -300 + scroll * 2 + 'px',
+        opacity: 0.01 + scroll / 100,
       });
       imageDiv.css({
         top: 600 + scroll / 2 + 'px',
       });
-      if (image.width() <= 400) {
-        image.css({
+      macDiv.css({
+        transform: 'scale(1)',
+      });
+
+      if (mac.width() <= 400) {
+        mac.css({
           width: 400,
           top: -60,
+        });
+        macDiv.css({
+          transform: 'scale(0.8)',
         });
         imageDiv.css({
           top: 670,
         });
       }
-      console.log();
+      console.log(1 - scroll / 100);
     });
   }
-}
-function scale(arg0: number) {
-  throw new Error('Function not implemented.');
 }
