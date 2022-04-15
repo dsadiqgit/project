@@ -26,7 +26,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     HomepageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
-  providers: [],
+  providers: [{ provide: Window, useValue: window }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

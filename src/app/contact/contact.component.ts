@@ -62,7 +62,6 @@ export class ContactComponent implements OnInit {
   }
 
   public onSubmit(e: Event) {
-    console.log(this.contactForm.get('firstName'));
     this.contactForm.markAllAsTouched();
     if (this.contactForm.valid) {
       const btn = document.getElementById('submit-btn') as HTMLElement;
