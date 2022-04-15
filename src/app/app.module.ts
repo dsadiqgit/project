@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { PortfolioStripComponent } from './portfolio-strip/portfolio-strip.component';
 import { ContactComponent } from './contact/contact.component';
 import { UspsComponent } from './usps/usps.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { UspsComponent } from './usps/usps.component';
     PortfolioStripComponent,
     ContactComponent,
     UspsComponent,
+    PortfolioComponent,
+    HomepageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
