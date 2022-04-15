@@ -42,16 +42,67 @@
     width: 100%;
     height: 350px;
     position: relative;
-    transform: scale(2.5);
+    transform: scale(2.6);
     top: 600px;
     margin-bottom: 900px;
 
-    & img {
+    .mac-div {
+      display: flex;
+      place-content: center;
+      z-index: 40;
+      position: relative;
+      transform: scale(1.5);
+      transition: 0.2s;
+
+      &.active {
+        transform: scale(0.8);
+      }
+
+      .avatar {
+        position: absolute;
+        width: 60px;
+        border-radius: 50%;
+        border: 1px solid #319fe3;
+        bottom: 10px;
+        animation: pulse 2s infinite;
+        box-shadow: 0 0 0 0 rgb(49 159 227 / 50%);
+      }
+
+      .avatar-div {
+        display: flex;
+        justify-content: center;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+        }
+
+        70% {
+          transform: scale(1);
+          box-shadow: 0 0 0 2px rgba(255, 177, 66, 0);
+        }
+
+        100% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
+        }
+      }
+
+      h6 {
+        font-size: 6px;
+        position: absolute;
+      }
+    }
+
+    & #mac {
       width: 100%;
       position: absolute;
       top: -300px;
       left: 50%;
       transform: translate(-50%);
+      opacity: 0;
     }
   }
 

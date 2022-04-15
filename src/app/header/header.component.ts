@@ -19,14 +19,6 @@ export class HeaderComponent implements OnInit {
     hamburger.classList.toggle('open');
     this.showMenu = !this.showMenu;
 
-    if (this.showMenu) {
-      document.body.className = 'no-overflow';
-    }
-  }
-
-  public closeMenu() {
-    if (this.showMenu === true) {
-      !this.showMenu;
-    }
+    document.body.classList.toggle('no-overflow');
   }
 }

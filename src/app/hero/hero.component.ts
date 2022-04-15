@@ -32,22 +32,29 @@ export class HeroComponent implements OnInit {
         top: 600 + scroll / 2 + 'px',
       });
       macDiv.css({
-        transform: 'scale(1)',
+        top: 0 + scroll / 1.8 + 'px',
       });
 
       if (mac.width() <= 400) {
         mac.css({
           width: 400,
-          top: -60,
+          top: -57,
         });
         macDiv.css({
-          transform: 'scale(0.8)',
+          top: 67,
         });
         imageDiv.css({
           top: 670,
         });
       }
-      console.log(1 - scroll / 100);
+
+      if (mac.width() <= 519) {
+        macDiv.addClass('active');
+      }
+      if (mac.width() >= 520) {
+        macDiv.removeClass('active');
+      }
+      console.log(mac.width());
     });
   }
 }
