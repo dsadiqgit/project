@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DamiComponent } from './dami/dami.component';
@@ -12,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { UspsComponent } from './usps/usps.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { TechStackComponent } from './tech-stack/tech-stack.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +27,15 @@ import { HomepageComponent } from './homepage/homepage.component';
     UspsComponent,
     PortfolioComponent,
     HomepageComponent,
+    TechStackComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SlickCarouselModule,
+  ],
   providers: [{ provide: Window, useValue: window }],
   bootstrap: [AppComponent],
 })

@@ -1,6 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 declare var $: any;
-console.log(`jQuery version: ${$.fn.jquery}`);
 
 @Component({
   selector: 'app-hero',
@@ -61,7 +60,6 @@ export class HeroComponent implements OnInit {
           mouse.removeClass('d-none');
         }
       }
-      console.log(scroll);
     });
   }
 }

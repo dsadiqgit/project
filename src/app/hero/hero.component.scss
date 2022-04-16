@@ -102,7 +102,7 @@
       height: 350px;
       transform: scale(2.6);
       top: 600px;
-      margin-bottom: 900px;
+      margin-bottom: 750px;
     }
 
     .mac-div {
@@ -181,7 +181,7 @@
       .anim-typewriter {
         animation: typewriter 4s steps(44) 1s 1 normal both,
           blinkTextCursor 500ms steps(44) infinite normal;
-        animation-delay: 2s;
+        animation-delay: 0.4s;
       }
       @keyframes typewriter {
         from {

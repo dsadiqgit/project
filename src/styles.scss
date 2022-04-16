@@ -100,3 +100,24 @@ body {
     }
   }
 }
+
+.slick-slider {
+  width: 88%;
+  margin: auto;
+}
+
+body .slick-prev,
+body .slick-next {
+  height: 45px;
+  width: 40px;
+  z-index: 100;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(49, 159, 227, 0.5) !important;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

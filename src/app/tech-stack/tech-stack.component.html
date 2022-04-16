@@ -1,0 +1,20 @@
+<section id="tech-stack">
+  <div class="container">
+    <div class="tech-info"></div>
+    <div class="tech-slider">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <div class="img-div">
+            <div *ngFor="let image of slide.img" class="tech">
+              <img src="{{ image }}" />
+            </div>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</section>
