@@ -20,12 +20,17 @@ export class HeroComponent implements OnInit {
 
     $(window).scroll(function () {
       var lgScreen = window.matchMedia('(min-width: 768px)');
+      var smScreen = window.matchMedia('(max-width: 767px)');
 
       var scroll = $(window).scrollTop();
       var mac = $('#mac');
       var imageDiv = $('#js-hero');
       var macDiv = $('#mac-div');
       var mouse = $('#mouse');
+
+      if (smScreen.matches) {
+        imageDiv.addClass('mob');
+      }
 
       if (lgScreen.matches) {
         mac.css({
