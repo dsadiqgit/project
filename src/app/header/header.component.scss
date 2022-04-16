@@ -1,7 +1,7 @@
 #header {
   background-color: #319fe3;
   position: fixed;
-  z-index: 10;
+  z-index: 999;
   width: 100%;
 
   .container {
@@ -49,7 +49,7 @@
     }
 
     #hamburger {
-      width: 30px;
+      width: 5px 30px;
       @media screen and (min-width: 768px) {
         width: 40px;
       }
@@ -68,7 +68,11 @@
 
       &.open {
         span {
-          background: #319fe3;
+          background: #ffffff;
+
+          @media screen and (min-width: 768px) {
+            background: #319fe3;
+          }
         }
       }
       @media screen and (min-width: 768px) {
@@ -183,7 +187,7 @@
   height: 100vh;
   position: fixed;
   background-color: #319fe3;
-  top: -100%;
+  top: -100vh;
   z-index: 10;
   transition: top 1s ease-in;
   display: flex;

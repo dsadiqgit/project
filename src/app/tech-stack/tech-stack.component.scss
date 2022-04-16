@@ -1,5 +1,9 @@
 #tech-stack {
-  padding: 100px 0;
+  padding: 50px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
   background-color: #319fe3;
   .container {
     @media screen and (min-width: 768px) {
@@ -8,6 +12,12 @@
   }
   .tech-info {
     color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
 
     .work-btn {
       border: none;
@@ -54,16 +64,17 @@
     padding: 20px 0;
 
     img {
-      width: 40px;
+      width: 50px;
       margin: 10px 0;
       transition: 0.6s;
-      border-radius: 15px;
+      border-radius: 5px;
       padding: 5px;
       box-shadow: 1px 4px 8px 1px rgb(0 0 0 / 31%);
       background-color: #ffffff;
 
       @media screen and (min-width: 768px) {
         width: 120px;
+        border-radius: 15px;
       }
 
       &:hover {
