@@ -23,6 +23,9 @@
 
 html {
   overflow-x: hidden;
+  &.no-overflow {
+    overflow: hidden;
+  }
 }
 
 body {
@@ -91,6 +94,40 @@ body {
     }
   }
 
+  .slide-left {
+    animation: 1.4s fade-in ease-in;
+    @media screen and (min-width: 768px) {
+      animation: 1.4s slide-left ease-in;
+    }
+  }
+  @keyframes slide-left {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0%;
+    }
+  }
+
+  .slide-up {
+    animation: 1.4s fade-in ease-in;
+    @media screen and (min-width: 768px) {
+      animation: 1.4s slide-up ease-in;
+    }
+  }
+  @keyframes slide-up {
+    from {
+      bottom: -500px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+
+  .fade-in {
+    animation: 1.4s fade-in ease-in;
+  }
+
   @keyframes fade-in {
     from {
       opacity: 0;
@@ -113,11 +150,10 @@ body .slick-next {
   z-index: 100;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: rgba(49, 159, 227, 0.5) !important;
+.slick-prev {
+  left: -50px !important;
+}
 
-  &:hover {
-    transform: scale(1.1);
-  }
+.slick-next {
+  right: -50px !important;
 }

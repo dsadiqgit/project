@@ -11,13 +11,15 @@ export class HeroComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public contactMe() {
-    alert('smell');
-  }
-
   @HostListener('window:scroll', []) onWindowScroll() {
+    const introText = document.getElementById('intro') as HTMLElement;
+
+    if (this.isInViewport(introText)) {
+      introText.classList.add('fade-in');
+    }
+
     $(window).scroll(function () {
-      var lgScreen = window.matchMedia('(min-width: 700px)');
+      var lgScreen = window.matchMedia('(min-width: 768px)');
 
       var scroll = $(window).scrollTop();
       var mac = $('#mac');
@@ -61,5 +63,26 @@ export class HeroComponent implements OnInit {
         }
       }
     });
+  }
+
+  public isInViewport(item) {
+    var bounding = item.getBoundingClientRect(),
+      myElementHeight = item.offsetHeight,
+      myElementWidth = item.offsetWidth;
+
+    if (
+      bounding.top >= -myElementHeight &&
+      bounding.left >= -myElementWidth &&
+      bounding.right <=
+        (window.innerWidth || document.documentElement.clientWidth) +
+          myElementWidth &&
+      bounding.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) +
+          myElementHeight
+    ) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

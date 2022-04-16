@@ -72,6 +72,19 @@
       height: 100%;
       position: relative;
 
+      &:hover {
+        &:after {
+          content: "";
+          background: rgba(49, 159, 227, 0.6);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+        }
+      }
+
       &:hover .img-caption {
         opacity: 1;
       }
@@ -89,6 +102,7 @@
         left: 30px;
         transition: 1.2s ease-in-out;
         text-align: left;
+        z-index: 10;
 
         p {
           background: white;

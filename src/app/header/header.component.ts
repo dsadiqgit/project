@@ -15,10 +15,12 @@ export class HeaderComponent implements OnInit {
   public toggleMenu() {
     const nav = document.getElementById('nav') as HTMLElement;
     const hamburger = document.getElementById('hamburger') as HTMLElement;
+    const html = document.getElementById('dsadiq') as HTMLElement;
     nav.classList.toggle('active');
     hamburger.classList.toggle('open');
     this.showMenu = !this.showMenu;
 
     document.body.classList.toggle('no-overflow');
+    html.classList.toggle('no-overflow');
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-tech-stack',
@@ -9,6 +9,18 @@ export class TechStackComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  @HostListener('window:scroll', []) onWindowScroll() {
+    const techDiv = document.getElementById('tech-slider') as HTMLElement;
+    const techInfo = document.getElementById('tech-info') as HTMLElement;
+
+    if (this.isInViewport(techDiv)) {
+      techDiv.classList.add('slide-left');
+    }
+    if (this.isInViewport(techInfo)) {
+      techInfo.classList.add('slide-right');
+    }
+  }
 
   slides = [
     {
@@ -42,6 +54,27 @@ export class TechStackComponent implements OnInit {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
+
+  public isInViewport(item) {
+    var bounding = item.getBoundingClientRect(),
+      myElementHeight = item.offsetHeight,
+      myElementWidth = item.offsetWidth;
+
+    if (
+      bounding.top >= -myElementHeight &&
+      bounding.left >= -myElementWidth &&
+      bounding.right <=
+        (window.innerWidth || document.documentElement.clientWidth) +
+          myElementWidth &&
+      bounding.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) +
+          myElementHeight
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
