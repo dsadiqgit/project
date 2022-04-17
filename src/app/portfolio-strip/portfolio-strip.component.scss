@@ -72,6 +72,10 @@
       height: 100%;
       position: relative;
 
+      span {
+        color: #000000;
+      }
+
       &:hover {
         &:after {
           content: "";
@@ -89,7 +93,7 @@
         opacity: 1;
       }
 
-      &:hover .img-caption h5 {
+      &:hover .img-caption h4 {
         &:after {
           margin-left: 50px;
         }
@@ -113,7 +117,7 @@
           border-bottom: 2px solid #319fe3;
         }
 
-        h5 {
+        h4 {
           background: white;
           padding: 5px 80px 5px 10px;
           font-weight: 500;

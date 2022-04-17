@@ -1,0 +1,75 @@
+#tutor-right {
+  margin-top: 200px;
+  .header-section {
+    text-align: center;
+    padding-bottom: 100px;
+    a {
+      color: #000000;
+      &:hover {
+        color: #319fe3;
+      }
+    }
+
+    span {
+      padding: 0 7px;
+      font-weight: 500;
+    }
+
+    .splitter {
+      &:after {
+        font-family: "fontello";
+        content: ".";
+        font-weight: 400;
+        font-size: 25px;
+        position: relative;
+        bottom: 3px;
+      }
+    }
+  }
+
+  .portfolio-section {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    .details {
+      h5 {
+        padding-bottom: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 30%;
+
+        p {
+          width: 80%;
+        }
+      }
+    }
+    .content {
+      @media screen and (min-width: 768px) {
+        width: 70%;
+      }
+
+      .hero-img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .content-text {
+        margin: 40px 0;
+        font-weight: 300;
+      }
+
+      .gallery {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .gallery-img {
+        width: 48%;
+        border-radius: 5px;
+      }
+    }
+  }
+}

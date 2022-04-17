@@ -15,6 +15,7 @@ import { UspsComponent } from './usps/usps.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { TechStackComponent } from './tech-stack/tech-stack.component';
+import { TutorRightComponent } from './portfolio/tutor-right/tutor-right.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TechStackComponent } from './tech-stack/tech-stack.component';
     PortfolioComponent,
     HomepageComponent,
     TechStackComponent,
+    TutorRightComponent,
   ],
   imports: [
     BrowserModule,
