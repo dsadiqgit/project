@@ -49,7 +49,7 @@
     }
 
     #hamburger {
-      width: 5px 30px;
+      width: 30px;
       @media screen and (min-width: 768px) {
         width: 40px;
       }
@@ -187,7 +187,7 @@
   height: 100vh;
   position: fixed;
   background-color: #319fe3;
-  top: -100vh;
+  top: -1000px;
   z-index: 10;
   transition: top 1s ease-in;
   display: flex;
@@ -229,8 +229,11 @@
   }
 
   .left-menu {
+    width: 60%;
+
     @media screen and (min-width: 768px) {
       display: flex;
+      width: 70%;
     }
   }
 
