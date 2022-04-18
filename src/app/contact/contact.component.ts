@@ -5,7 +5,7 @@ import {
   Validators,
   FormBuilder,
 } from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +15,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private route: Router) {}
 
   ngOnInit(): void {
     this.contactForm = new FormGroup({
@@ -30,14 +30,6 @@ export class ContactComponent implements OnInit {
         Validators.minLength(10),
       ]),
     });
-  }
-
-  @HostListener('window:scroll', []) onWindowScroll() {
-    const item = document.getElementById('contact-form') as HTMLElement;
-
-    if (this.isInViewport(item)) {
-      item.classList.add('slide-right');
-    }
   }
 
   public isInViewport(item) {
@@ -98,6 +90,9 @@ export class ContactComponent implements OnInit {
       //       console.log(error.text);
       //     }
       //   );
+      setTimeout(() => {
+        this.route.navigate(['/']);
+      }, 10000);
     }
 
     if (!this.contactForm.valid) {

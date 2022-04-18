@@ -1,13 +1,14 @@
 #header {
   background-color: #319fe3;
   position: fixed;
-  z-index: 999;
+  z-index: 99;
   width: 100%;
+  top: 0;
 
   .container {
     display: flex;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 98;
     position: relative;
 
     p {
@@ -249,9 +250,15 @@
     padding-left: 30px;
     flex-direction: column;
     color: #319fe3;
+    z-index: 100;
 
     h6 {
       font-size: 20px;
+    }
+
+    h4 {
+      color: #319fe3;
+      cursor: pointer;
     }
 
     @media screen and (min-width: 768px) {

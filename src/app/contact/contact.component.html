@@ -1,7 +1,11 @@
+<app-header></app-header>
 <div class="contact">
   <div class="container d-md-flex">
-    <div class="col-md-6" id="contact-form">
-      <h2>Fill the form to <span>Contact me.</span></h2>
+    <div id="contact-form" class="contact-form">
+      <h3>
+        I'm interested in learning more about your project.
+        <span> Are you ready to begin?</span>
+      </h3>
 
       <form [formGroup]="contactForm" (submit)="onSubmit($event)">
         <div class="row">
@@ -91,6 +95,5 @@
         </div>
       </form>
     </div>
-    <div class="col-md-6 map-div mt-5"></div>
   </div>
 </div>

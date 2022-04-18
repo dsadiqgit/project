@@ -17,6 +17,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TechStackComponent } from './tech-stack/tech-stack.component';
 import { TutorRightComponent } from './portfolio/tutor-right/tutor-right.component';
 import { FussyKitchenComponent } from './portfolio/fussy-kitchen/fussy-kitchen.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { FussyKitchenComponent } from './portfolio/fussy-kitchen/fussy-kitchen.c
     TechStackComponent,
     TutorRightComponent,
     FussyKitchenComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
