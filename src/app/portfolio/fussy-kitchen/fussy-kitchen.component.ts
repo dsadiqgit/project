@@ -1,12 +1,12 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-tutor-right',
-  templateUrl: './tutor-right.component.html',
-  styleUrls: ['./tutor-right.component.scss'],
+  selector: 'app-fussy-kitchen',
+  templateUrl: './fussy-kitchen.component.html',
+  styleUrls: ['./fussy-kitchen.component.scss'],
 })
-export class TutorRightComponent implements OnInit {
-  constructor(private window: Window) {}
+export class FussyKitchenComponent implements OnInit {
+  constructor() {}
 
   ngOnInit(): void {}
 

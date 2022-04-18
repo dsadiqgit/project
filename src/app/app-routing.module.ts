@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TutorRightComponent } from './portfolio/tutor-right/tutor-right.component';
+import { FussyKitchenComponent } from './portfolio/fussy-kitchen/fussy-kitchen.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'tutor-right', component: TutorRightComponent },
+  { path: 'fussy', component: FussyKitchenComponent },
 ];
 
 @NgModule({

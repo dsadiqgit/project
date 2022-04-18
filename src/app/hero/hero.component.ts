@@ -18,10 +18,14 @@ export class HeroComponent implements OnInit {
       introText.classList.add('fade-in');
     }
 
+    setInterval(function () {
+      const lgScreen = window.matchMedia('(min-width: 768px)');
+      window.matchMedia('(max-width: 767px)');
+    }, 1);
+
     $(window).scroll(function () {
       var lgScreen = window.matchMedia('(min-width: 768px)');
       var smScreen = window.matchMedia('(max-width: 767px)');
-
       var scroll = $(window).scrollTop();
       var mac = $('#mac');
       var imageDiv = $('#js-hero');
@@ -30,9 +34,12 @@ export class HeroComponent implements OnInit {
 
       if (smScreen.matches) {
         imageDiv.addClass('mob');
+        macDiv.removeClass('active');
       }
 
       if (lgScreen.matches) {
+        imageDiv.removeClass('mob');
+
         mac.css({
           width: 100 - scroll / 2 + '%',
           top: -300 + scroll * 2 + 'px',
