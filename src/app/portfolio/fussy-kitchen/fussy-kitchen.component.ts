@@ -59,4 +59,7 @@ export class FussyKitchenComponent implements OnInit {
       return false;
     }
   }
+  public goToWork() {
+    window.location.href = '#portfolio-strip';
+  }
 }

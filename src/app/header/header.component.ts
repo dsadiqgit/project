@@ -23,4 +23,14 @@ export class HeaderComponent implements OnInit {
     document.body.classList.toggle('no-overflow');
     html.classList.toggle('no-overflow');
   }
+
+  public goToWork() {
+    !this.showMenu;
+    window.location.href = '#portfolio-strip';
+  }
+
+  public goToContact() {
+    !this.showMenu;
+    window.location.href = '/contact';
+  }
 }

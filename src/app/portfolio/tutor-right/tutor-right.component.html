@@ -5,7 +5,7 @@
       <h2>Tutor Right</h2>
       <a routerLink="/"><span>Home</span></a>
       <span class="splitter"></span>
-      <a routerLink="/portfolio"><span>All Projects</span></a>
+      <a (click)="goToWork()"><span>All Projects</span></a>
       <span class="splitter"></span>
       <span>Tutor Right</span>
     </div>
@@ -14,11 +14,9 @@
         <span id="portfolio-info" class="portfolio-info">
           <h5>Web Development</h5>
           <p class="light-text">
-            Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat
-            volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus
-            suscipit. Quisque vitae nibh iaculis neque blandit euismod.
-            Pellentesque dignissim volutpat orci at interdum. In id ipsum
-            volutpat.
+            Tutor Right was created in 2016, since then the team have been
+            providing industry-leading tuition for students across the North
+            West.
           </p>
           <span class="light-text">Client:</span>
           <span class="client">Tutor Right</span>
@@ -30,15 +28,14 @@
       <div class="content">
         <img class="hero-img" src="../../../assets/images/tutor-right.jpg" />
         <p class="light-text">
-          Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat.
-          Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit.
-          Quisque vitae nibh iaculis neque blandit euismod. Pellentesque
-          dignissim volutpat orci at interdum. In id ipsum volutpat.
+          The client required to update their website utilising the Wordpress
+          content management system. They desired the usage of circles and lines
+          throughout the branding.
           <br />
           <br />
-          Maecenas sit amet purus eget ipsum elementum venenatis. Aenean maximus
-          urna magna, quis rutrum mi semper non. Cras rhoncus elit non arcu
-          hendrerit rhoncus.
+          I worked closely with project managers and graphic designers to obtain
+          necessary assets and interact with the customer in order to achieve
+          the project's requirements.
         </p>
         <div class="gallery">
           <img
@@ -54,10 +51,12 @@
     </div>
   </div>
   <div class="arrow-container">
-    <a routerLink="/fussy">
+    <a routerLink="/skinz">
       <div class="left"></div>
     </a>
-    <div class="right"></div>
+    <a routerLink="/club-au">
+      <div class="right"></div>
+    </a>
   </div>
 </div>
 <app-footer></app-footer>

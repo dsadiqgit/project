@@ -3,7 +3,7 @@
     <div class="header-div">
       <a href="#">
         <img
-          src="../../assets/images/dsadiq-logo.png"
+          src="../../assets/images/logo-white.png"
           class="logo"
           alt="DSadiq Logo"
         />
@@ -38,9 +38,9 @@
               <a routerLink="/">Home</a>
             </li>
             <li>About</li>
-            <a routerLink="/portfolio">
+            <button (click)="goToWork()">
               <li>Work</li>
-            </a>
+            </button>
             <a routerLink="/contact">
               <li>Contact</li>
             </a>
@@ -50,7 +50,7 @@
     </div>
     <div class="right-menu">
       <h6>Have a project?</h6>
-      <a routerLink="/contact"><h4>Lets get started</h4></a>
+      <a (click)="goToContact()"><h4>Lets get started</h4></a>
     </div>
   </div>
 </div>
