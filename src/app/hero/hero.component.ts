@@ -19,13 +19,13 @@ export class HeroComponent implements OnInit {
     }
 
     setInterval(function () {
-      const lgScreen = window.matchMedia('(min-width: 768px)');
+      const lgScreen = window.matchMedia('(min-width: 1024px)');
       window.matchMedia('(max-width: 767px)');
     }, 1);
 
     $(window).scroll(function () {
-      var lgScreen = window.matchMedia('(min-width: 768px)');
-      var smScreen = window.matchMedia('(max-width: 767px)');
+      var lgScreen = window.matchMedia('(min-width: 1024px)');
+      var smScreen = window.matchMedia('(max-width: 1024px)');
       var scroll = $(window).scrollTop();
       var mac = $('#mac');
       var imageDiv = $('#js-hero');

@@ -6,7 +6,7 @@
   }
   background-color: #319fe3;
   .container {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       display: flex;
     }
   }
@@ -15,7 +15,7 @@
     text-align: center;
     margin-bottom: 50px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       text-align: left;
     }
 
@@ -33,12 +33,12 @@
     }
 
     position: relative;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       width: 50%;
     }
 
     p {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1024px) {
         width: 70%;
         margin-top: 50px;
         font-size: 18px;
@@ -49,7 +49,7 @@
   .tech-slider {
     cursor: pointer;
     position: relative;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
       width: 50%;
       padding: 0 50px;
     }

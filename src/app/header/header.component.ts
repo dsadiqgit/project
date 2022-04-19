@@ -24,13 +24,20 @@ export class HeaderComponent implements OnInit {
     html.classList.toggle('no-overflow');
   }
 
+  public goToHome() {
+    window.location.href = '/';
+  }
+
   public goToWork() {
-    !this.showMenu;
-    window.location.href = '#portfolio-strip';
+    const nav = document.getElementById('nav') as HTMLElement;
+    const hamburger = document.getElementById('hamburger') as HTMLElement;
+    nav.classList.toggle('active');
+    hamburger.classList.toggle('open');
+    window.location.href = '/#portfolio-strip';
+    console.log(this.showMenu);
   }
 
   public goToContact() {
-    !this.showMenu;
     window.location.href = '/contact';
   }
 }

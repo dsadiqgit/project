@@ -10,15 +10,6 @@
       </a>
 
       <span class="d-flex">
-        <a routerLink="/contact">
-          <div class="contact">
-            <img
-              src="../../assets/images/icon/speech-bubble.png"
-              class="speech"
-              alt="Speech Icon"
-            />
-          </div>
-        </a>
         <div id="hamburger" (click)="toggleMenu()">
           <span></span>
           <span></span>
@@ -35,12 +26,9 @@
         <div class="nav-menu">
           <ul>
             <li>
-              <a routerLink="/">Home</a>
+              <a (click)="goToHome()">Home</a>
             </li>
-            <li>About</li>
-            <button (click)="goToWork()">
-              <li>Work</li>
-            </button>
+            <li><a (click)="goToWork()">Work</a></li>
             <a routerLink="/contact">
               <li>Contact</li>
             </a>
