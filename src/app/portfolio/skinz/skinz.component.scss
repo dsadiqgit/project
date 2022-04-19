@@ -1,4 +1,4 @@
-#tutor-right {
+#skinz {
   margin-top: 100px;
 
   text-align: center;
@@ -73,10 +73,8 @@
       }
 
       .fixed {
-        transition: 1s;
-
-        position: fixed;
         top: 70px;
+        position: fixed;
         width: 350px;
       }
     }
@@ -111,7 +109,6 @@
       }
     }
   }
-
   .arrow-container {
     display: flex;
     width: 90%;
@@ -123,6 +120,7 @@
       width: 50%;
 
       &:after {
+        cursor: pointer;
         content: "";
         background-image: url(../../../assets/images/icon/left-arrow.png);
         width: 30px;
@@ -140,6 +138,7 @@
       text-align: right;
 
       &:after {
+        cursor: pointer;
         content: "";
         background-image: url(../../../assets/images/icon/right-arrow.png);
         width: 30px;

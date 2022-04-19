@@ -18,6 +18,7 @@ import { TechStackComponent } from './tech-stack/tech-stack.component';
 import { TutorRightComponent } from './portfolio/tutor-right/tutor-right.component';
 import { FussyKitchenComponent } from './portfolio/fussy-kitchen/fussy-kitchen.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkinzComponent } from './portfolio/skinz/skinz.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FooterComponent } from './footer/footer.component';
     TutorRightComponent,
     FussyKitchenComponent,
     FooterComponent,
+    SkinzComponent,
   ],
   imports: [
     BrowserModule,
