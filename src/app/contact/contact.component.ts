@@ -6,6 +6,7 @@ import {
   FormBuilder,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -74,22 +75,22 @@ export class ContactComponent implements OnInit {
         this.contactForm.reset();
       }, 4100);
 
-      // e.preventDefault();
-      // emailjs
-      //   .sendForm(
-      //     'service_uh6lbzf',
-      //     'template_7zqrnbx',
-      //     e.target as HTMLFormElement,
-      //     'hcmeQ8mn0wGk88WA6'
-      //   )
-      //   .then(
-      //     (result: EmailJSResponseStatus) => {
-      //       console.log(result.text);
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //     }
-      //   );
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          'service_uh6lbzf',
+          'template_7zqrnbx',
+          e.target as HTMLFormElement,
+          'hcmeQ8mn0wGk88WA6'
+        )
+        .then(
+          (result: EmailJSResponseStatus) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
       setTimeout(() => {
         this.route.navigate(['/']);
       }, 10000);
