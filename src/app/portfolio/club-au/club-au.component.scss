@@ -1,0 +1,155 @@
+#club-au {
+  margin-top: 100px;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-wdith: 768px) {
+    margin-top: 200px;
+  }
+  .header-section {
+    text-align: center;
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 100px;
+    }
+    a {
+      color: #000000;
+      &:hover {
+        color: #319fe3;
+      }
+    }
+
+    span {
+      padding: 0 7px;
+      font-weight: 500;
+    }
+
+    .splitter {
+      &:after {
+        font-family: "fontello";
+        content: ".";
+        font-weight: 400;
+        font-size: 25px;
+        position: relative;
+        bottom: 3px;
+      }
+    }
+  }
+
+  .portfolio-section {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    .portfolio-info {
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 350px;
+      }
+    }
+
+    .light-text {
+      margin: 30px 0;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+    .details {
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        width: 30%;
+
+        p {
+          width: 300px;
+        }
+      }
+
+      .client {
+        padding: 0 10px;
+      }
+
+      .fixed {
+        top: 70px;
+        position: fixed;
+        width: 350px;
+      }
+    }
+    .content {
+      @media screen and (min-width: 768px) {
+        width: 70%;
+      }
+
+      .hero-img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .gallery {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 70px;
+      }
+
+      .gallery-img {
+        width: 100%;
+        border-radius: 15px;
+        margin: 10px 0;
+
+        @media screen and (min-width: 768px) {
+          width: 48%;
+          margin: 0;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .arrow-container {
+    display: flex;
+    width: 90%;
+    border-top: 1px solid #e3e3e3;
+    padding: 0 20px 100px 20px;
+    margin: 0 auto;
+
+    & .left {
+      width: 50%;
+
+      &:after {
+        cursor: pointer;
+        content: "";
+        background-image: url(../../../assets/images/icon/left-arrow.png);
+        width: 30px;
+        margin-top: 30px;
+        position: absolute;
+        height: 10%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+        left: 10%;
+      }
+    }
+    & .right {
+      width: 50%;
+      text-align: right;
+
+      &:after {
+        cursor: pointer;
+        content: "";
+        background-image: url(../../../assets/images/icon/right-arrow.png);
+        width: 30px;
+        margin-top: 30px;
+        position: absolute;
+        height: 10%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 1s;
+        right: 10%;
+      }
+    }
+  }
+}

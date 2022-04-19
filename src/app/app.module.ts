@@ -19,6 +19,7 @@ import { TutorRightComponent } from './portfolio/tutor-right/tutor-right.compone
 import { FussyKitchenComponent } from './portfolio/fussy-kitchen/fussy-kitchen.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkinzComponent } from './portfolio/skinz/skinz.component';
+import { ClubAuComponent } from './portfolio/club-au/club-au.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { SkinzComponent } from './portfolio/skinz/skinz.component';
     FussyKitchenComponent,
     FooterComponent,
     SkinzComponent,
+    ClubAuComponent,
   ],
   imports: [
     BrowserModule,

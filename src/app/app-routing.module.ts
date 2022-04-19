@@ -7,6 +7,7 @@ import { TutorRightComponent } from './portfolio/tutor-right/tutor-right.compone
 import { FussyKitchenComponent } from './portfolio/fussy-kitchen/fussy-kitchen.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkinzComponent } from './portfolio/skinz/skinz.component';
+import { ClubAuComponent } from './portfolio/club-au/club-au.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'tutor-right', component: TutorRightComponent },
   { path: 'fussy', component: FussyKitchenComponent },
   { path: 'skinz', component: SkinzComponent },
+  { path: 'club-au', component: ClubAuComponent },
   { path: 'contact', component: ContactComponent },
 ];
 
